@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron">
     <div class="container">
-      <h1 class="display-3">Pro Version!</h1>
+      <h1 class="display-3">Pro Page</h1>
       <p>
         This is a template for a simple marketing or informational website. It includes a large
         callout called a jumbotron and three supporting pieces of content. Use it as a starting
@@ -14,6 +14,6 @@
 
 <script>
 export default {
-  name: 'HeaderContentPro',
+  name: 'HeaderPro',
 };
 </script>

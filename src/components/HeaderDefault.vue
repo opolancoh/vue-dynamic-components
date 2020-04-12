@@ -7,19 +7,22 @@
       width="72"
       height="72"
     />
-    <h1>{{ title }}</h1>
+    <h1>{{ item.title }}</h1>
     <p>
-      {{ subtitle }}
+      {{ item.subtitle }}
     </p>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
-  name: 'HeaderContentDefault',
-  props: {
-    title: { type: String, required: true },
-    subtitle: { type: String, required: true },
+  name: 'HeaderDefault',
+  computed: {
+    ...mapState({
+      item: (state) => state.headerData,
+    }),
   },
 };
 </script>
